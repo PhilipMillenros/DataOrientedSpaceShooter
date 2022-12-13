@@ -104,7 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\dev\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\SDL2\include;$(ProjectDir)\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -121,7 +121,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\dev\SDL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\SDL2\include;$(ProjectDir)\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -133,13 +133,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="source\ECS\ComponentArray.hpp" />
+    <ClCompile Include="headers\ECS\Core\ComponentArray.h" />
     <ClCompile Include="source\ECS\EntityManager.cpp" />
     <ClCompile Include="source\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="headers\ECS\ComponentManager.h" />
+    <ClInclude Include="headers\ECS\Components\Transform.h" />
+    <ClInclude Include="headers\ECS\Coordinator.h" />
+    <ClInclude Include="headers\ECS\Core\System.h" />
     <ClInclude Include="headers\ECS\ECS.h" />
     <ClInclude Include="headers\ECS\EntityManager.h" />
+    <ClInclude Include="headers\ECS\SystemManager.h" />
+    <ClInclude Include="headers\ECS\Systems\EnemyMovementSystem.h" />
+    <ClInclude Include="headers\Math\Vector2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

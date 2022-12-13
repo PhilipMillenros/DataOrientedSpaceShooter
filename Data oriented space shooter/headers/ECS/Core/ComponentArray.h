@@ -1,3 +1,7 @@
+#pragma once
+#include <ECS/ECS.h>
+#include <unordered_map>
+#include <assert.h>
 class IComponentArray
 {
 public:
@@ -11,8 +15,8 @@ class ComponentArray : public IComponentArray
 public:
 	void InsertData(Entity entity, T component)
 	{
-		assert(mEntityToIndexMap.find(entity) == entityToIndexMap.end() && "Component added to same entity more than once");
-		size_t newIndex = mSize;
+		assert(entityToIndexMap.find(entity) == entityToIndexMap.end() && "Component added to same entity more than once");
+		size_t newIndex = size;
 		entityToIndexMap[entity] = newIndex;
 		indexToEntityMap[newIndex] = entity;
 		componentArray[newIndex] = component;
@@ -23,7 +27,7 @@ public:
 	{
 		assert(entityToIndexMap.find(entity) != entityToIndexMap.end() && "Removing non-existent data");
 
-		size_t indexOfRemovedEntity = mEntityToIndexMap[entity];
+		size_t indexOfRemovedEntity = entityToIndexMap[entity];
 		size_t indexOfLastElement = size - 1;
 		componentArray[indexOfRemovedEntity] = componentArray[indexOfLastElement];
 

@@ -1,35 +1,56 @@
-#include "SDL.h"
+#pragma once
+#include "ECS/Coordinator.h"
+//#include "SDL.h"
+#include <ECS\Components\Transform.h>
+#include <ECS\Systems\EnemyMovementSystem.h>
+#include <iostream>
+#include <random>
+#include <chrono>
+Coordinator gCoordinator;
 
-#include <array>
-#include <assert.h>
-#include <unordered_map>
-
-
-
-struct Vec3
+int main()
 {
-	float x = 0.f, y = 0.f, z = 0.f;
-};
-struct Transform
-{
-	Vec3 pos;
-};
+	gCoordinator.Init();
 
+	gCoordinator.RegisterComponent<Transform>();
 
+	auto enemyMovementSystem = gCoordinator.RegisterSystem<EnemyMovementSystem>();
 
-int main(int argc, char *argv[])
-{
-	SDL_Init(SDL_INIT_EVERYTHING);
-	SDL_Window* window = SDL_CreateWindow("title", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 600, 400, SDL_WINDOW_SHOWN);
-	SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, 0);
+	Signature signature;
+	signature.set(gCoordinator.GetComponentType<Transform>());
+	gCoordinator.SetSystemSignature<EnemyMovementSystem>(signature);
 
-	SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
+	std::vector<Entity> entities(MAX_ENTITIES);
 
-	SDL_RenderClear(renderer);
-	
-	SDL_RenderPresent(renderer);
-	
+	std::default_random_engine generator;
+	std::uniform_real_distribution<float> randPosition(-100.0f, 100.0f);
+	std::uniform_real_distribution<float> randRotation(0.0f, 3.0f);
+	std::uniform_real_distribution<float> randScale(3.0f, 5.0f);
+	std::uniform_real_distribution<float> randGravity(-10.0f, -1.0f);
 
- 	return 0;
+	float scale = randScale(generator);
+
+	for (auto& entity : entities)
+	{
+		entity = gCoordinator.CreateEntity();
+
+		gCoordinator.AddComponent(entity, Transform{ Vector2(0.0f, 0.0f) });
+	}
+
+	float deltaTime = 0.0f;
+	bool quit = false;
+	while (!quit)
+	{
+		auto startTime = std::chrono::high_resolution_clock::now();
+
+		enemyMovementSystem->Update(deltaTime);
+
+		auto stopTime = std::chrono::high_resolution_clock::now();
+
+		deltaTime = std::chrono::duration<float, std::chrono::seconds::period>(stopTime - startTime).count();
+
+		
+	}
+	return 0;
 }
 

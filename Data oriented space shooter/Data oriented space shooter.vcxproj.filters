@@ -18,7 +18,7 @@
     <ClCompile Include="source\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="source\ECS\ComponentArray.hpp">
+    <ClCompile Include="headers\ECS\Core\ComponentArray.h">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="source\ECS\EntityManager.cpp">
@@ -30,6 +30,27 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="headers\ECS\ECS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\ECS\ComponentManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\ECS\SystemManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\ECS\Coordinator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\ECS\Components\Transform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Math\Vector2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\ECS\Systems\EnemyMovementSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\ECS\Core\System.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

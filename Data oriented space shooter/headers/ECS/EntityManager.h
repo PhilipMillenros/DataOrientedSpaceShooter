@@ -1,4 +1,4 @@
-#include "..\..\headers\ECS\ECS.h"
+#include "ECS\ECS.h"
 #include <queue>
 #include <array>
 #include <assert.h>
