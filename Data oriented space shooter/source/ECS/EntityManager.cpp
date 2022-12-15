@@ -1,4 +1,4 @@
-#include "ECS\EntityManager.h"
+#include "ECS\Core\EntityManager.h"
 
 EntityManager::EntityManager()
 {

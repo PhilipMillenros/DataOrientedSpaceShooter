@@ -1,5 +1,5 @@
 #pragma once
-#include <ECS/ECS.h>
+#include "ECS.h"
 #include <unordered_map>
 #include <assert.h>
 class IComponentArray

@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 struct Vector2
 {
 public:
@@ -11,4 +12,19 @@ public:
 	{
 		return {other.x + x, other.y + y};
 	}
+	Vector2 operator*(const float& other)
+	{
+		return { x * other, y * other };
+	}
+	Vector2 operator+=(const Vector2& other)
+	{
+		x += other.x;
+		y += other.y;
+		return *this;
+	}
+	Vector2 operator/(const float& other)
+	{
+		return {x / other, y / other};
+	}
+	
 };

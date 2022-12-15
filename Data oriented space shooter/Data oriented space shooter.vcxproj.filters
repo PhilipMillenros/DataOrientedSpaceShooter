@@ -24,21 +24,39 @@
     <ClCompile Include="source\ECS\EntityManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="source\ECS\Systems\QuadTreeCollision.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ECS\Components\Collider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ECS\Components\Bounds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ECS\Systems\CollisionSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ECS\Components\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ECS\Systems\PlayerMovementSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="headers\ECS\EntityManager.h">
+    <ClInclude Include="headers\ECS\Core\EntityManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\ECS\ECS.h">
+    <ClInclude Include="headers\ECS\Core\ECS.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\ECS\ComponentManager.h">
+    <ClInclude Include="headers\ECS\Core\ComponentManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\ECS\SystemManager.h">
+    <ClInclude Include="headers\ECS\Core\SystemManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\ECS\Coordinator.h">
+    <ClInclude Include="headers\ECS\Core\Coordinator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="headers\ECS\Components\Transform.h">
@@ -51,6 +69,33 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="headers\ECS\Core\System.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\Engine\Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\ECS\Components\RectangleSprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\ECS\Components\Enemy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\ECS\Components\Collider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\ECS\Systems\QuadTreeCollision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\ECS\Components\Bounds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\ECS\Systems\CollisionSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\ECS\Components\Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\ECS\Systems\PlayerMovementSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

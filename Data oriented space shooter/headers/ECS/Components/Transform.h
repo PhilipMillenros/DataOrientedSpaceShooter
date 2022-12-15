@@ -4,13 +4,13 @@ struct Transform
 {
 	
 public:
-	Vector2 position;
+	Vector2 position {0, 0};
+	Vector2 size{ 1, 1 };
 	Transform()
 	{
-		position = { 0.f, 0.f };
+
 	}
-	Transform(Vector2 position)
-	{
-		this->position = position;
-	}
+	Transform(Vector2 position, Vector2 size) : position(position),  size(size) {}
+	
+
 };

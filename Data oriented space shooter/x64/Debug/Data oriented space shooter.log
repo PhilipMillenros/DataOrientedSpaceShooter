@@ -1,4 +1,16 @@
 ﻿  ComponentArray.h
+  Bounds.cpp
+  Collider.cpp
+  EntityManager.cpp
+  CollisionSystem.cpp
+  PlayerMovementSystem.cpp
+  QuadTreeCollision.cpp
   main.cpp
+C:\dev\Data oriented space shooter\Data oriented space shooter\source\main.cpp(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\dev\Data oriented space shooter\Data oriented space shooter\headers\ECS\Components\RectangleSprite.h(22,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\dev\Data oriented space shooter\Data oriented space shooter\headers\ECS\Components\RectangleSprite.h(23,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\dev\Data oriented space shooter\Data oriented space shooter\headers\ECS\Components\RectangleSprite.h(24,16): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\dev\Data oriented space shooter\Data oriented space shooter\headers\ECS\Components\RectangleSprite.h(25,16): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
   Generating Code...
-  Data oriented space shooter.vcxproj -> C:\dev\Data oriented space shooter\x64\Debug\Data oriented space shooter.exe
+main.obj : error LNK2019: unresolved external symbol "public: __cdecl Player::Player(void)" (??0Player@@QEAA@XZ) referenced in function "public: __cdecl std::array<struct Player,4096>::array<struct Player,4096>(void)" (??0?$array@UPlayer@@$0BAAA@@std@@QEAA@XZ)
+C:\dev\Data oriented space shooter\x64\Debug\Data oriented space shooter.exe : fatal error LNK1120: 1 unresolved externals

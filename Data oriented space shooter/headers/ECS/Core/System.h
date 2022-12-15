@@ -1,6 +1,6 @@
 #pragma once
 #include <set>
-#include <ECS\ECS.h>
+#include "ECS\Core\ECS.h"
 
 class System
 {
