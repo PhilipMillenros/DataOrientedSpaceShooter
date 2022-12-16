@@ -1,0 +1,32 @@
+﻿  ComponentArray.h
+  Bounds.cpp
+  Collider.cpp
+  Player.cpp
+  CollisionSystem.cpp
+  ProjectileSystem.cpp
+C:\dev\Data oriented space shooter\Data oriented space shooter\headers\ECS\Components\RectangleSprite.h(23,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\dev\Data oriented space shooter\Data oriented space shooter\headers\ECS\Components\RectangleSprite.h(24,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\dev\Data oriented space shooter\Data oriented space shooter\headers\ECS\Components\RectangleSprite.h(25,16): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\dev\Data oriented space shooter\Data oriented space shooter\headers\ECS\Components\RectangleSprite.h(26,16): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  QuadTreeCollision.cpp
+  main.cpp
+C:\dev\Data oriented space shooter\Data oriented space shooter\headers\ECS\Components\RectangleSprite.h(23,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\dev\Data oriented space shooter\Data oriented space shooter\headers\ECS\Components\RectangleSprite.h(24,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\dev\Data oriented space shooter\Data oriented space shooter\headers\ECS\Components\RectangleSprite.h(25,16): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\dev\Data oriented space shooter\Data oriented space shooter\headers\ECS\Components\RectangleSprite.h(26,16): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\dev\Data oriented space shooter\Data oriented space shooter\headers\ECS\Systems\EnemySystem.h(14,74): warning C4244: 'argument': conversion from 'int' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+C:\dev\Data oriented space shooter\Data oriented space shooter\headers\ECS\Systems\EnemySystem.h(15,58): warning C4244: 'argument': conversion from 'int' to '_Ty', possible loss of data
+          with
+          [
+              _Ty=float
+          ]
+  Generating code
+  0 of 1767 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Data oriented space shooter.vcxproj -> C:\dev\Data oriented space shooter\x64\Release\Data oriented space shooter.exe

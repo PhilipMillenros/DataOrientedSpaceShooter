@@ -10,3 +10,13 @@ using ComponentType = std::uint32_t;
 const ComponentType MAX_COMPONENTS = 64;
 
 using Signature = std::bitset<MAX_COMPONENTS>;
+
+enum class InputButtons
+{
+	W,
+	A,
+	S,
+	D,
+	Q,
+	E
+};

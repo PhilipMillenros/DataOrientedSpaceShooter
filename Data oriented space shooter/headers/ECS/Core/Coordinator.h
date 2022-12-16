@@ -75,7 +75,7 @@ public:
 	{
 		systemManager->SetSignature<T>(signature);
 	}
-
+	
 private: 
 	std::unique_ptr<ComponentManager> componentManager;
 	std::unique_ptr<EntityManager> entityManager;

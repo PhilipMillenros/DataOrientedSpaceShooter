@@ -140,6 +140,7 @@
     <ClCompile Include="source\ECS\EntityManager.cpp" />
     <ClCompile Include="source\ECS\Systems\CollisionSystem.cpp" />
     <ClCompile Include="source\ECS\Systems\PlayerMovementSystem.cpp" />
+    <ClCompile Include="source\ECS\Systems\ProjectileSystem.cpp" />
     <ClCompile Include="source\ECS\Systems\QuadTreeCollision.cpp" />
     <ClCompile Include="source\main.cpp" />
   </ItemGroup>
@@ -147,6 +148,7 @@
     <ClInclude Include="headers\ECS\Components\Bounds.h" />
     <ClInclude Include="headers\ECS\Components\Collider.h" />
     <ClInclude Include="headers\ECS\Components\Player.h" />
+    <ClInclude Include="headers\ECS\Components\Projectile.h" />
     <ClInclude Include="headers\ECS\Core\ComponentManager.h" />
     <ClInclude Include="headers\ECS\Components\Enemy.h" />
     <ClInclude Include="headers\ECS\Components\RectangleSprite.h" />
@@ -157,11 +159,12 @@
     <ClInclude Include="headers\ECS\Core\EntityManager.h" />
     <ClInclude Include="headers\ECS\Core\SystemManager.h" />
     <ClInclude Include="headers\ECS\Systems\CollisionSystem.h" />
-    <ClInclude Include="headers\ECS\Systems\EnemyMovementSystem.h" />
+    <ClInclude Include="headers\ECS\Systems\EnemySystem.h" />
     <ClInclude Include="headers\ECS\Systems\QuadTreeCollision.h" />
     <ClInclude Include="headers\Engine\Engine.h" />
     <ClInclude Include="headers\Math\Vector2.h" />
     <ClInclude Include="headers\ECS\Systems\PlayerMovementSystem.h" />
+    <ClInclude Include="headers\ECS\Systems\ProjectileSystem.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

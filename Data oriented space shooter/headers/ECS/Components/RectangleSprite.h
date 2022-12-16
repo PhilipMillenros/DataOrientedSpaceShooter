@@ -1,7 +1,8 @@
 #pragma once
 #include "SDL.h"
-#include "Engine\Engine.h"
 #include "Math\Vector2.h"
+extern SDL_Renderer* renderer;
+extern SDL_Window* window;
 struct RectangleSprite
 {
 public:

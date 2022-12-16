@@ -42,6 +42,9 @@
     <ClCompile Include="source\ECS\Systems\PlayerMovementSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="source\ECS\Systems\ProjectileSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\ECS\Core\EntityManager.h">
@@ -65,7 +68,7 @@
     <ClInclude Include="headers\Math\Vector2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headers\ECS\Systems\EnemyMovementSystem.h">
+    <ClInclude Include="headers\ECS\Systems\EnemySystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="headers\ECS\Core\System.h">
@@ -96,6 +99,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="headers\ECS\Systems\PlayerMovementSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\ECS\Systems\ProjectileSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\ECS\Components\Projectile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

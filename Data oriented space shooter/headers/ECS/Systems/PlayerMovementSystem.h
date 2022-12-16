@@ -4,6 +4,7 @@
 extern Coordinator coordinator;
 class PlayerMovementSystem : public System
 {
+public:
 	PlayerMovementSystem();
 	void Update(float deltaTime);
 };

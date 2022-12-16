@@ -38,7 +38,6 @@ void QuadTreeCollision::Insert(Collider* collider)
     {
         if (!nodeFlag)
         {
-            // Create child nodes
             nodes[0] = new QuadTreeCollision(level + 1, Bounds(bounds.position, bounds.bounds / 2.f));
             nodes[1] = new QuadTreeCollision(level + 1, Bounds(Vector2(bounds.position.x + bounds.bounds.x / 2, bounds.position.y), bounds.bounds / 2.f));
             nodes[2] = new QuadTreeCollision(level + 1, Bounds(Vector2(bounds.position.x, bounds.position.y + bounds.bounds.y / 2.f), bounds.bounds / 2.f));
